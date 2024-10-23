@@ -1,11 +1,12 @@
 #include<stdio.h>
 
 int main(){
+    
+    int age = 20;
+    char name [] = "Mahmoud";
+    double gpa = 2.7;
 
-
-    int age ;
-    printf("Please enter your name :\n");
-    scanf("%d",&age);
-    printf("Your are %d years old",age);
+    printf("%p", &age);
+     
     return 0;
 }
