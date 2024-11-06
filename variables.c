@@ -4,28 +4,28 @@
 int main()
 {
 
- int array [] = {1,3,5,2,4,6};
- 
- int lenght = sizeof(array)/sizeof(array[0]);
+int inputarray[] = {1,9,8,4};
 
- int insertion = 0;
+int leftarray[2];
+int rightarray[2];
 
-
- for (int i = 0; i < lenght-1 ; i++)
- {
-    
-   for(int j = i+1;j<lenght;j++)
+int size = sizeof(inputarray) / sizeof(inputarray[0]);
+for (int i = 0; i < size; i++)
+{
+    if (i<(size/2))
     {
-      if (array[i]>array[j])
-      {
-        ++insertion;
-      }
-      
+        leftarray[i] = inputarray[i];
+    }else{
+        rightarray[i-2] = inputarray[i];
     }
-    
- }
- printf("%d\n",insertion);
-
-
- 
 }
+
+printf("%d\n",leftarray[1]);
+printf("%d",rightarray[1]);
+
+
+
+
+}
+
+
